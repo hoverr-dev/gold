@@ -19,7 +19,7 @@ function browsersync() {
 
 function styles() {
   return src('app/scss/style.scss')
-    .pipe(scss({outputStyle:'compressed'}))
+    .pipe(scss({ outputStyle: 'compressed' }))
     .pipe(concat('style.min.css'))
     .pipe(autoprefixer({
       overrideBrowserslist: ['last 10 versions'],
@@ -32,28 +32,29 @@ function styles() {
 function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.js',
-    'app/js/main.js'
+    'node_modules/slick-carousel/slick/slick.js',
+    'app/js/main.js',
   ])
-  .pipe(concat('main.min.js'))
-  .pipe(uglify())
+    .pipe(concat('main.min.js'))
+    .pipe(uglify())
     .pipe(dest('app/js'))
-  .pipe(browserSync.stream())
+    .pipe(browserSync.stream())
 }
 
 function images() {
   return src('app/images/**/*')
-  .pipe(imagemin([
-    imagemin.gifsicle({ interlaced: true }),
-    imagemin.mozjpeg({ quality: 75, progressive: true }),
-    imagemin.optipng({ optimizationLevel: 5 }),
-    imagemin.svgo({
-      plugins: [
-        { removeViewBox: true },
-        { cleanupIDs: false }
-      ]
-    })
-  ]))
-  .pipe(dest('dist/images'))
+    .pipe(imagemin([
+      imagemin.gifsicle({ interlaced: true }),
+      imagemin.mozjpeg({ quality: 75, progressive: true }),
+      imagemin.optipng({ optimizationLevel: 5 }),
+      imagemin.svgo({
+        plugins: [
+          { removeViewBox: true },
+          { cleanupIDs: false }
+        ]
+      })
+    ]))
+    .pipe(dest('dist/images'))
 }
 
 function build() {
@@ -61,8 +62,8 @@ function build() {
     'app/**/*.html',
     'app/css/style.min.css',
     'app/js/main.min.js'
-  ], {base: 'app'})
-  .pipe(dest('dist'))
+  ], { base: 'app' })
+    .pipe(dest('dist'))
 }
 
 function cleanDist() {

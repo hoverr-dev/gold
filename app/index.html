@@ -11,36 +11,138 @@
 
 <body>
   <header class="header">
-    <div class="container">
-      <div class="header-top">
-        <div class="header-top__inner">
-          <a class="header-top__link" href="#">
-            <img class="header-top__img" src="images/header/header-logo.svg" alt="Лого: goldfish">
-          </a>
+    <div class="header__wrapper">
+      <div class="container">
+        <div class="header-top">
+          <div class="header-top__logo">
+            <a class="header-top__link" href="#">
+              <img class="header-top__img" src="images/header/header-logo.svg" alt="Лого: goldfish">
+            </a>
+          </div>
+          <div class="header-top-form">
+            <form class="header-top-form__form" action="#">
+              <input class="header-top-form__input" type="text" placeholder="Найти игру">
+              <button class="header-top-form__btn">
+              </button>
+            </form>
+          </div>
+          <div class="header-phone">
+            <img class="header-phone__img" src="images/header/icons/header-top-phone.svg" alt="Icon: Телефон">
+            <a class="header-phone__tel" href="tel:+74959111011">+7 (495) 911-10-11</a>
+          </div>
+          <div class="header-user">
+            <a class="header-user__profile" href="#">
+              <img class="header-user__img" src="images/header/icons/header-top-profile.svg" alt="Icon: Личный кабинет">
+            </a>
+            <a class="header-user__shopping-cart" href="#">
+              <img class="header-user__img" src="images/header/icons/header-top-shopping-cart.svg" alt="Icon: Корзина">
+            </a>
+          </div>
         </div>
-        <div class="header-top-form">
-          <form class="header-top-form__form" action="#">
-            <input class="header-top-form__input" type="text" placeholder="Найти игру">
-            <button class="header-top-form__btn">
-            </button>
-          </form>
-        </div>
-        <div class="header-phone">
-          <img class="header-phone__img" src="images/header/icons/header-top-phone.svg" alt="Icon: Телефон">
-          <a class="header-phone__tel" href="tel:+74959111011">+7 (495) 911-10-11</a>
-        </div>
-        <div class="header-user">
-          <a class="header-user__profile" href="#">
-            <img class="header-user__img" src="images/header/icons/header-top-profile.svg" alt="Icon: Личный кабинет">
-          </a>
-          <a class="header-user__shopping-cart" href="#">
-            <img class="header-user__img" src="images/header/icons/header-top-shopping-cart.svg" alt="Icon: Корзина">
-          </a>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <div class="header-bottom__inner">
+          <nav class="menu">
+            <ul class="menu-list">
+              <div class="burger">
+                <span class="burger__line"></span>
+              </div>
+              <div class="burger-link">
+                <a class="burger-link__catalog link" href="#">Каталог</a>
+              </div>
+              <li class="menu-list__item">
+                <a class="menu-list__link link" href="#">Wharhammer</a>
+              </li>
+              <li class="menu-list__item">
+                <a class="menu-list__link link" href="#">Magic:the Cathering</a>
+              </li>
+              <li class="menu-list__item">
+                <a class="menu-list__link link" href="#">Мероприятия</a>
+              </li>
+              <li class="menu-list__item">
+                <a class="menu-list__link link" href="#">О центре</a>
+              </li>
+              <li class="menu-list__item">
+                <a class="menu-list__link link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-bottom-social">
+            <div class="header-bottom-social__item">
+              <a class="header-bottom-social__link" href="#">
+                <img class="header-bottom-social__link" src="images/header/icons/header-instagram.svg"
+                  alt="Icon: Инстаграм">
+              </a>
+            </div>
+            <div class="header-bottom-social__item">
+              <a class="header-bottom-social__link" href="#">
+                <img class="header-bottom-social__link" src="images/header/icons/header-vk.svg" alt="Icon: Вконтакте">
+              </a>
+            </div>
+            <div class="header-bottom-social__item">
+              <a class="header-bottom-social__link" href="#"><img class="header-bottom-social__link"
+                  src="images/header/icons/header-facebook.svg" alt="Icon: Фейсбук">
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </header>
-  <main class="main"></main>
+  <main class="main">
+    <section class="hero">
+      <div class="slider">
+        <div class="slider__item">
+          <div class="slider-box slider-box_position">
+            <h3 class="slider-box__title hero-title">варгейм</h3>
+            <span class="slider-box__text hero-text">er games</span>
+            <a class="slider-box__btn btn" href="#">Подробнее</a>
+          </div>
+          <img src="images/hero/slider-photo-1.jpg" alt="">
+        </div>
+        <div class="slider__item">
+          <div class="slider-box">
+            <h3 class="slider-box__title hero-title">Самая популярная карточная игра</h3>
+            <span class="slider-box__text hero-text">Magic: the Gathering</span>
+            <a class="slider-box__btn btn" href="#">Подробнее</a>
+          </div>
+          <img src="images/hero/slider-photo-2.jpg" alt="">
+        </div>
+        <div class="slider__item">
+          <div class="slider-box slider-box_position-3">
+            <h3 class="slider-box__title hero-title">Попробуй игры разных жанров</h3>
+            <span class="slider-box__text hero-text">Весь католог</span>
+          </div>
+          <img src="images/hero/slider-photo-3.jpg" alt="">
+        </div>
+        <div class="slider__item">
+          <div class="slider-box slider-box_position">
+            <h3 class="slider-box__title hero-title">варгейм</h3>
+            <span class="slider-box__text hero-text">er games</span>
+            <a class="slider-box__btn btn" href="#">Подробнее</a>
+          </div>
+          <img src="images/hero/slider-photo-1.jpg" alt="">
+        </div>
+        <div class="slider__item">
+          <div class="slider-box">
+            <h3 class="slider-box__title hero-title">Самая популярная карточная игра</h3>
+            <span class="slider-box__text hero-text">Magic: the Gathering</span>
+            <a class="slider-box__btn btn" href="#">Подробнее</a>
+          </div>
+          <img src="images/hero/slider-photo-2.jpg" alt="">
+        </div>
+        <div class="slider__item">
+          <div class="slider-box slider-box_position-3">
+            <h3 class="slider-box__title hero-title">Попробуй игры разных жанров</h3>
+            <span class="slider-box__text hero-text">Весь католог</span>
+          </div>
+          <img src="images/hero/slider-photo-3.jpg" alt="">
+        </div>
+      </div>
+    </section>
+  </main>
   <footer class="footer">
     <div class="container">
       <div class="footer-top">

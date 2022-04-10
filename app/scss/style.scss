@@ -5,20 +5,26 @@
 @import "global";
 
 .header {
-  background-color: $grey-color;
-  padding-top: 23px;
-  padding-bottom: 21px;
+  &__wrapper {
+    background-color: $grey-color;
+    padding-top: 23px;
+    padding-bottom: 21px;
+  }
   &-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    &__logo {
+      margin-right: 33px;
+    }
     &-form {
-      max-width: 475px;
-      position: relative;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-basis: 48%;
+      flex: 1 1 auto;
+      &__form {
+        position: relative;
+      }
       &__input {
         width: 475px;
         max-width: 100%;
@@ -43,10 +49,10 @@
     }
   }
   &-phone {
-    max-width: 219px;
     width: 100%;
     height: 25px;
     justify-content: space-between;
+    flex-basis: 27%;
     &__tel {
       @extend %trebuchetms-700;
       font-weight: 700;
@@ -80,6 +86,130 @@
         @extend %opensans-700;
       }
     }
+  }
+}
+
+.header-bottom {
+  background-color: $light;
+  padding: 19px 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-social {
+    display: flex;
+    justify-content: space-between;
+    max-width: 91px;
+    width: 100%;
+  }
+}
+
+.menu {
+  &-list {
+    display: flex;
+    align-items: center;
+    &__item {
+      display: flex;
+    }
+    &__item + .menu-list__item {
+      margin-left: 69px;
+    }
+  }
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 16px;
+  height: 13px;
+  background-color: transparent;
+  cursor: pointer;
+  margin-right: 14px;
+  &-link {
+    margin-right: 86px;
+  }
+  &__line {
+    width: 16px;
+    height: 2px;
+    background-color: $grey-color;
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 16px;
+      height: 2px;
+      background-color: $grey-color;
+    }
+    &::before {
+      top: 0;
+    }
+    &:after {
+      bottom: 0;
+    }
+  }
+}
+
+.slider {
+  &__item {
+    position: relative;
+  }
+  &-box {
+    width: 97%;
+    position: absolute;
+    bottom: 33px;
+    left: 35px;
+    &_position {
+      width: 100%;
+      left: 0;
+    }
+    &_position-3 {
+      left: 56%;
+    }
+    &__btn {
+      position: absolute;
+      top: 20px;
+      right: 50px;
+      padding: 8px 33px 8px 33px;
+    }
+  }
+}
+
+.slick {
+  position: relative;
+  &-slide {
+    margin: 0 5px;
+  }
+  &-track {
+    display: flex;
+    align-items: flex-start;
+  }
+  &-list {
+    overflow: hidden;
+  }
+  &-prev,
+  &-next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background-color: $grey-color;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 5;
+  }
+  &-prev {
+    left: 35px;
+    bottom: 50%;
+    transform: translate(0, 50%);
+  }
+  &-next {
+    right: 35px;
+    bottom: 50%;
+    transform: translate(0, 50%);
   }
 }
 
