@@ -34,11 +34,24 @@ button {
   color: $grey-color;
 }
 
+.title {
+  font-size: 32px;
+  line-height: 37px;
+  color: $title;
+}
+
 .hero-title {
   font-size: 14px;
   line-height: 16px;
   @extend %trebuchetms-400;
   color: inherit;
+}
+
+.catalog-link {
+  font-size: 18px;
+  line-height: 21px;
+  @extend %trebuchetms-700;
+  color: $light;
 }
 
 .hero-text {
