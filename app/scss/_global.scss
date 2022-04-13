@@ -47,18 +47,29 @@ button {
   color: inherit;
 }
 
-.catalog-link {
-  font-size: 18px;
-  line-height: 21px;
-  @extend %trebuchetms-700;
-  color: $light;
-}
-
 .hero-text {
   font-size: 28px;
   line-height: 33px;
-  @extend %trebuchetms-700;
   color: inherit;
+}
+
+.catalog-link {
+  font-size: 18px;
+  line-height: 21px;
+  color: $light;
+}
+
+.card-text {
+  font-size: 11px;
+  line-height: 13px;
+  color: $grey-color;
+  @extend %trebuchetms-400;
+}
+
+.card-price {
+  font-size: 21px;
+  line-height: 24px;
+  color: $grey-color;
 }
 
 .footer-title {
@@ -79,7 +90,6 @@ button {
   color: inherit;
   font-size: 14px;
   line-height: 16px;
-  @extend %trebuchetms-700;
   background: linear-gradient(184.53deg, $orange-color 5.27%, $gradient-color 91.78%);
   border-radius: 9px;
 }
