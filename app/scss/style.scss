@@ -451,6 +451,28 @@
   }
 }
 
+.about {
+  padding-bottom: 65px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-content {
+    max-width: 540px;
+    &__title {
+      margin-bottom: 21px;
+    }
+    &__descr {
+      margin-bottom: 20px;
+    }
+  }
+  &-image {
+    &__img {
+      border-radius: 9px;
+    }
+  }
+}
+
 .footer {
   background-color: $grey-color;
   &-top {
