@@ -419,6 +419,12 @@
       bottom: 0;
       background-color: rgba(42, 42, 42, 0.79);
       border-radius: 0px 0px 9px 9px;
+      &__title {
+        transition: color 0.3s;
+        &:hover {
+          color: $light;
+        }
+      }
       &__wrapper {
         display: flex;
         align-items: center;
@@ -446,6 +452,10 @@
       &__title {
         color: $light;
         margin-bottom: 8px;
+        transition: color 0.3s;
+        &:hover {
+          color: $orange-color;
+        }
       }
     }
   }
