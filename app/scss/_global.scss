@@ -75,7 +75,6 @@ button {
 .events-title {
   font-size: 19px;
   line-height: 22px;
-  @extend %trebuchetms-700;
   color: $orange-color;
 }
 
@@ -120,4 +119,13 @@ button {
   font-size: 19px;
   line-height: 22px;
   color: $orange-color;
+}
+
+.btn-orange {
+  font-size: 23px;
+  line-height: 27px;
+  color: $grey-color;
+  background-color: transparent;
+  border-radius: 9px;
+  border: 3px solid $orange-color;
 }

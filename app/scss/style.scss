@@ -429,6 +429,28 @@
   }
 }
 
+.information {
+  padding-bottom: 85px;
+  &__title {
+    margin-bottom: 21px;
+  }
+  &-item {
+    position: relative;
+    &-box {
+      max-width: 100%;
+      padding: 22px 22px 22px 17px;
+      position: absolute;
+      bottom: 0;
+      background-color: rgba(42, 42, 42, 0.79);
+      border-radius: 0px 0px 9px 9px;
+      &__title {
+        color: $light;
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
 .footer {
   background-color: $grey-color;
   &-top {
