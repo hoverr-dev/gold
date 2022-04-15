@@ -576,6 +576,30 @@
       margin-bottom: 26px;
     }
   }
+  &-list {
+    &__link {
+      transition: color 0.3s;
+      &:hover {
+        color: $orange-color;
+      }
+    }
+  }
+  &-link {
+    &__links {
+      transition: color 0.3s;
+      &:hover {
+        color: $orange-color;
+      }
+    }
+  }
+  &-pay {
+    &__link {
+      transition: color 0.3s;
+      &:hover {
+        color: $orange-color;
+      }
+    }
+  }
   &-info {
     display: flex;
     flex-direction: column;
