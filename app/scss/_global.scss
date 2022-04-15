@@ -72,6 +72,25 @@ button {
   color: $grey-color;
 }
 
+.events-title {
+  font-size: 19px;
+  line-height: 22px;
+  @extend %trebuchetms-700;
+  color: $orange-color;
+}
+
+.events-date {
+  font-size: 16px;
+  line-height: 21px;
+  @extend %opensans-400;
+}
+
+.descr {
+  font-size: 16px;
+  line-height: 21px;
+  @extend %trebuchetms-400;
+}
+
 .footer-title {
   font-weight: 700;
   font-size: 19px;
