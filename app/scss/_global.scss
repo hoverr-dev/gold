@@ -40,6 +40,13 @@ button {
   color: $title;
 }
 
+.descr {
+  font-size: 16px;
+  line-height: 19px;
+  color: $grey-color;
+  @extend %trebuchetms-400;
+}
+
 .hero-title {
   font-size: 14px;
   line-height: 16px;
@@ -90,11 +97,11 @@ button {
   @extend %trebuchetms-400;
 }
 
-.descr {
+.contacts-style {
+  @extend %trebuchetms-400;
   font-size: 16px;
   line-height: 19px;
   color: $grey-color;
-  @extend %trebuchetms-400;
 }
 
 .footer-title {
