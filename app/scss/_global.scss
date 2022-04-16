@@ -79,6 +79,13 @@ button {
   color: $grey-color;
 }
 
+.card-oldprice {
+  font-size: 18px;
+  line-height: 21px;
+  @extend %trebuchetms-400;
+  color: $grey-color;
+}
+
 .events-title {
   font-size: 19px;
   line-height: 22px;
